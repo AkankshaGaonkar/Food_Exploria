@@ -1,2 +1,2 @@
-# Food-Ordering-DBMS-Project-
-Food Ordering Management System
+# Food Exploria
+Online Food Ordering Management System Mini-Project.
