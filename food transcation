@@ -1,0 +1,34 @@
+import sqlite3
+#define connection and cursor
+connection = sqlite3.connect('food transactions.db')
+cursor = connection.cursor()
+
+#create food table
+command1 = """CREATE TABLE IF NOT EXISTS food
+(food_id INTEGER PRIMARY KEY,food_name TEXT)"""
+cursor.execute(command1)
+
+#create prize table
+command2 = """CREATE TABLE IF NOT EXISTS prize
+(customer_id INTEGER PRIMARY KEY,prize_id INTEGER,totalcost FLOAT,FOREIGN KEY(food_id)REFERENCES (prize_id))"""
+
+cursor.execute(command2)
+
+#add items to food table
+cursor.execute("INSERT INTO food VALUES(01,'Red Velvet')")
+cursor.execute("INSERT INTO food VALUES(02,'Black Forest')")
+cursor.execute("INSERT INTO food VALUES(03,'Nutty Choco Lava)")
+cursor.execute("INSERT INTO food VALUES(04,'German White Truffle')")
+cursor.execute("INSERT INTO food VALUES(05,'Ferror Rocher')")
+
+#add items to prize table
+cursor.execute("INSERT INTO prize VALUES(1001,01,29.75)")
+cursor.execute("INSERT INTO prize VALUES(1002,02,13.75)")
+cursor.execute("INSERT INTO prize VALUES(1003,03,98.75)")
+cursor.execute("INSERT INTO prize VALUES(1004,04,67.75)")
+cursor.execute("INSERT INTO prize VALUES(1005,05,22.75)")
+
+#get result
+cursor.execute("SELECT * FROM prize")
+results = cursor.fetchall()
+print(result)
