@@ -12,12 +12,12 @@ def table_creation(connection, cursor):
     cursor.execute(command2)
 
 #add items to food table
-def insert_table_food(connection,cursor, foodId, foodName):
+def insert_table_food(connection, cursor, foodId, foodName):
     q = "INSERT INTO Food(food_id, food_name) VALUES(" + str(foodId) + " , '" + foodName + "');"   
     cursor.execute(q)
     connection.commit()
 
-def insert_table_price(connection,cursor, prizeId, price):
+def insert_table_price(connection, cursor, prizeId, price):
     q = "INSERT INTO Prize(prize_id, price) VALUES(" + str(prizeId) + " , " + str(price) + ");"   
     cursor.execute(q)
     connection.commit()
