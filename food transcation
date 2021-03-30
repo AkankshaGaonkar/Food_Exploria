@@ -19,7 +19,7 @@ cursor.execute("INSERT INTO food VALUES(01,'Red Velvet')")
 cursor.execute("INSERT INTO food VALUES(02,'Black Forest')")
 cursor.execute("INSERT INTO food VALUES(03,'Choco Lava)")
 cursor.execute("INSERT INTO food VALUES(04,'Nutty Truffle')")
-cursor.execute("INSERT INTO food VALUES(05,'Ferror Rocher')")
+cursor.execute("INSERT INTO food VALUES(05,'Ferrero Rocher')")
 
 #add items to prize table
 cursor.execute("INSERT INTO prize VALUES(1001,01,29.75)")
