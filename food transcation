@@ -17,8 +17,8 @@ cursor.execute(command2)
 #add items to food table
 cursor.execute("INSERT INTO food VALUES(01,'Red Velvet')")
 cursor.execute("INSERT INTO food VALUES(02,'Black Forest')")
-cursor.execute("INSERT INTO food VALUES(03,'Nutty Choco Lava)")
-cursor.execute("INSERT INTO food VALUES(04,'German White Truffle')")
+cursor.execute("INSERT INTO food VALUES(03,'Choco Lava)")
+cursor.execute("INSERT INTO food VALUES(04,'Nutty Truffle')")
 cursor.execute("INSERT INTO food VALUES(05,'Ferror Rocher')")
 
 #add items to prize table
