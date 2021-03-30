@@ -30,6 +30,11 @@ def insert_table_price(connection, cursor, prizeId, price):
 
 #inserting into table Prize using function call, pass the prize_id and price as arguments to the function
 insert_table_price(connection, cursor, 6, 80)
+insert_table_price(connection, cursor, 01, 400)
+insert_table_price(connection, cursor, 02, 300)
+insert_table_price(connection, cursor, 03, 450)
+insert_table_price(connection, cursor, 04, 500)
+insert_table_price(connection, cursor, 05, 550)
 
 '''
 here your work is to insert into Price in which for all the foods in table Food, assign the proper price for it.
