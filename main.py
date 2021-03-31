@@ -3,6 +3,7 @@ from flask import Flask , render_template , redirect , url_for , request , sessi
 
 app = Flask(__name__)
 
+@app.route("/")
 @app.route("/home")
 def index():
     return render_template("home.html")

@@ -6,20 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Exploria</title>
     <style>
-        div{
+        p{
             text-align: center;
-            font-size: 3.6em;
         }
-        span{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-weight: bold;
-            font-size: 1.3em;
+        body{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
+        .container{
+            display: flex;
+            width: 800px;
+            justify-content: center;
+            align-items:center;
+        }
+        .products{
+            border: 2px solid black;
+            width:500px;
+            height:430px;
+        }
+        img{
+            width: 300px;
+            height: 350px;
+            padding: 10px 50px 50px 90px;
+        }            
     </style>
 </head>
 <body>
-    <div>
-        <h1>Food Exploria <span>By Akanksha Gaonkar</span></h1>
-    </div>
+        <p>Cake Menu</p>
+        <div class="container">
+            <div class="products">
+                <img src="../assets/Dairy Milk Silk.jpg" alt="image"/>
+            </div>
+            <div class="products">
+                <img src="../assets/Choco lava.jpg" alt="image">
+            </div>
+            <div class="products">
+                <img src="../assets/BlackForest.jpg" alt="image">
+            </div>
+            <div class = "products">
+                <img src="../assets/Ferrero Rocher.jpg" alt="image">
+            </div>
+        </div>
 </body>
 </html>
