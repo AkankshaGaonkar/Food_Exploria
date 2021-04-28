@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Placement Log-in</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="static/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <script></script>
+    <style>
+      body{
+        height: 100%;
+        background-color: cadetblue;
+        display: flex;
+        align-items: stretch;
+        margin: 0;
+      }
+
+      .container-block {
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+      }
+      .title-board {
+        width: 60%;
+        height: 100vh;
+        background-color:deepskyblue;
+        display: inline-block;
+      }
+
+      .title-board .content {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 20px;
+      }
+
+
+      .title-board .content h3 {
+        /* display: block; */
+        margin-left: 20px;
+      }
+
+      .form-block {
+        width: 40%;
+        height: 100vh;
+        background-color: honeydew;
+        display: flex;
+        float: right;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .form-block .header {
+        display: none;
+        padding: 20px;
+        padding-left: 40px;
+        width: 100%;
+        background-color: deepskyblue;
+      }
+
+      #dsu_img {
+        width: 60%;
+        height: auto;
+        /* margin-bottom: 0; */
+      }
+      .names {
+        width: 60%;
+      }
+
+      .student-form {
+        margin-left: 20px;
+        max-width: 300px;
+        justify-self: center;
+        align-self: center;
+        padding: 20px;
+      }
+
+      .student-form * {
+        display: block;
+        margin: 10px 0px;
+      }
+
+      .student-form a {
+        float: right;
+        color:teal;
+        text-decoration: none;
+      }
+
+      .form-block input {
+        background-color: transparent;
+        height: 30px;
+        font-size: medium;
+        color: black;
+        border: 0px;
+        border-bottom: 3px solid black;
+        margin-bottom: 20px;
+      }
+
+      #invalid_msg {
+        color: red;
+        {% if (invalid)%}
+        display: none;
+        {% endif %}
+      }
+
+      #login_btn {
+			  background-color: deepskyblue;
+			  color: black;
+			  padding: 10px 20px;
+			  border: none;
+			  border-radius: 20px;
+      }
+
+      #login_btn:hover {
+        background-color: #FE5F00;
+      }
+
+       
+      @media (max-width: 730px){
+        .form-block{
+          width: 100vw;
+        }
+        .title-board {
+          display: none;
+        }
+        .form-block .header {
+        display: inline-block;
+      }
+      }
+
+    </style>
+  </head>
+  
+  <body>
+    <div class="container-block">
+      <div class="title-board">
+        <div class="content">
+          <img id="dsu_img" src="https://www.sjec.ac.in/images/sjec-logo.png" alt="DSU">
+          <div class="names">
+            <h1>Food Exploria</h1>
+            <h2>A project by:</h2>
+            <h3>Akanksha</h3>
+            <h3>Prasad</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-block">
+        <h1 class="header">Food Order</h1>
+        <form  class="student-form " action="/login" method="POST">
+          <h3 style="margin-bottom: 20px;"><u>User Login</u></h3>
+          <input id="USN" name="UID" type="text" placeholder="User ID" required>
+          <input id="PW" name="PW" type="password" placeholder="Password" required>
+          <h5 id="invalid_msg">Invalid username or password!</h5>
+          <button id="login_btn" type="submit">Log in</button>
+          <a href="/adminlogin">Log in as admin</a>
+        </form>
+      </div>
+    </div>
+  </body>
+  </html>
