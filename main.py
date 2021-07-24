@@ -38,6 +38,15 @@ def index():
     return render_template("home.html", data = cake_names, prices = prices)
     # return render_template("index.html")
 
+@app.route("/cart", methods = ['GET', 'POST'])
+def cart():
+    if request.method == 'POST':
+        name = request.form["cakeName"]
+        qty = request.form["qty"]
+    return name+" "+qty
+    
+
+
 if __name__ == '__main__':
     secret_key = "chandaGompi"
     app.run(debug = True)
