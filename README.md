@@ -8,8 +8,8 @@ Database Management System Project using SQLite3 database where customer's order
 <img height=500 width=800 src="https://github.com/AkankshaGaonkar/Food_Exploria/blob/main/Images/Screenshot%20(385)_LI.jpg" />
 <h1>Menu Module</h1>     
 <img height=500 width=800 src="https://github.com/AkankshaGaonkar/Food_Exploria/blob/main/Images/Screenshot%20(390)_LI.jpg" />
- <h1>Reservation</h1>
+ <h1>Reservation Module</h1>
  <img height=500 width=800 src="https://github.com/AkankshaGaonkar/Food_Exploria/blob/main/Images/Screenshot%20(386).png" />
  <h1>Order Placed</h1>
- <img height=500 width=800 src="
+ <img height=500 width=800 src="https://github.com/AkankshaGaonkar/Food_Exploria/blob/main/Images/Screenshot%20(389).png" />
           
