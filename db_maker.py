@@ -35,9 +35,6 @@ insert_table_cart(connection, cursor, "Black Forest")
 insert_table_cart(connection, cursor, "Choco Lava")
 insert_table_cart(connection, cursor, "Red Velvet")
 insert_table_cart(connection, cursor, "Ferrero Rocher")
-
-
-
 #inserting into table Prize using function call, pass the prize_id and price as arguments to the function
 # insert_table_price(connection, cursor, 6, 80)
 # insert_table_price(connection, cursor, 1, 400)
