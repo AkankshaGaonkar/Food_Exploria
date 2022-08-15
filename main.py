@@ -45,8 +45,6 @@ def cart():
         qty = request.form["qty"]
     return name+" "+qty
     
-
-
 if __name__ == '__main__':
     secret_key = "chandaGompi"
     app.run(debug = True)
