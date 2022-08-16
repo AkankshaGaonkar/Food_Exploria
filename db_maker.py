@@ -40,7 +40,6 @@ insert_table_cart(connection, cursor, "Ferrero Rocher")
 # insert_table_price(connection, cursor, 2, 300)
 # insert_table_price(connection, cursor, 3, 450)
 # insert_table_price(connection, cursor, 4, 500)
-# insert_table_price(connection, cursor, 5, 550)
 
 '''
 here your work is to insert into Price in which for all the foods in table Food, assign the proper price for it.
