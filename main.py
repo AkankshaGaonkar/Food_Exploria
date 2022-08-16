@@ -46,6 +46,6 @@ def cart():
     return name+" "+qty
     
 if __name__ == '__main__':
-    secret_key = "chandaGompi"
+    secret_key = "chandaGompi,BM"
     app.run(debug = True)
 
