@@ -23,7 +23,6 @@ def insert_table_cart(connection, cursor, order):
     connection.commit()
 
 #creating table function call
-#table_creation(connection, cursor)
 
 #inserting into table Food using function call, pass the food_id and food_name as arguments to the function
 insert_table_food(connection, cursor, 300, "Black Forest")
