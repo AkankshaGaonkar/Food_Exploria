@@ -23,7 +23,6 @@ def insert_table_cart(connection, cursor, order):
     connection.commit()
 
 #creating table function call
-#table_creation(connection, cursor)
 
 #inserting into table Food using function call, pass the food_id and food_name as arguments to the function
 insert_table_food(connection, cursor, 300, "Black Forest")
@@ -35,16 +34,12 @@ insert_table_cart(connection, cursor, "Black Forest")
 insert_table_cart(connection, cursor, "Choco Lava")
 insert_table_cart(connection, cursor, "Red Velvet")
 insert_table_cart(connection, cursor, "Ferrero Rocher")
-
-
-
 #inserting into table Prize using function call, pass the prize_id and price as arguments to the function
 # insert_table_price(connection, cursor, 6, 80)
 # insert_table_price(connection, cursor, 1, 400)
 # insert_table_price(connection, cursor, 2, 300)
 # insert_table_price(connection, cursor, 3, 450)
 # insert_table_price(connection, cursor, 4, 500)
-# insert_table_price(connection, cursor, 5, 550)
 
 '''
 here your work is to insert into Price in which for all the foods in table Food, assign the proper price for it.
